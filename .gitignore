@@ -1,0 +1,5 @@
+dist/
+*.obj
+*.exe
+*.pdb
+vrrtest-log.txt
