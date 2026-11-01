@@ -78,6 +78,12 @@ Technical details (what gets changed and why Intel's LFC is turned off) are in [
 - Windows 11, administrator account
 - No other EDID tools active (e.g. CRU). Reset those first.
 
+## Support
+
+If these tweaks are useful to you, you can support their development on Ko-fi.
+
+[![Support me on Ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/nightstorm1000)
+
 ## Building from source
 
 Requires Visual Studio with the C++ desktop tools (for the VRR test tool) and the .NET SDK (for the power button).
