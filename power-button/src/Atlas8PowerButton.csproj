@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <PlatformTarget>x64</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AssemblyName>Atlas8PowerButton</AssemblyName>
+    <RootNamespace>Atlas8PowerButton</RootNamespace>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <GenerateAppConfig>false</GenerateAppConfig>
+    <Version>1.0.0</Version>
+    <Product>Atlas 8 Power Button</Product>
+    <Company>Killer Pixel Crew</Company>
+    <Copyright>Copyright (c) 2026 Killer Pixel Crew</Copyright>
+    <Description>Short and long press actions for the Acer Predator Atlas 8 power button</Description>
+    <DebugType>none</DebugType>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.ServiceProcess" />
+  </ItemGroup>
+</Project>

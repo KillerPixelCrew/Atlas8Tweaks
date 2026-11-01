@@ -3,3 +3,6 @@ dist/
 *.exe
 *.pdb
 vrrtest-log.txt
+bin/
+obj/
+power-button/out/

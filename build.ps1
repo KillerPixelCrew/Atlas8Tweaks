@@ -1,13 +1,17 @@
-# Builds the release ZIP: compiles Tools\VrrTest.exe and packages the VRR fix.
-#   .\build.ps1                 -> dist\Atlas8-VRR-Fix-<version>.zip
+# Builds the release files: the VRR fix ZIP (compiles Tools\VrrTest.exe) and the power button setup.
+#   .\build.ps1                 -> dist\Atlas8-VRR-Fix-<version>.zip, dist\Atlas8-PowerButton-Setup-<version>.exe
 #   .\build.ps1 -SkipCompile    -> reuse an existing vrr-fix\tools\VrrTest\VrrTest.exe
+#   .\build.ps1 -SkipVrr        -> power button setup only
 [CmdletBinding()]
-param([switch]$SkipCompile)
+param([switch]$SkipCompile, [switch]$SkipVrr)
 
 Set-StrictMode -Version Latest
 $ErrorActionPreference = 'Stop'
 
 $root = $PSScriptRoot
+& (Join-Path $root 'power-button\build.ps1')
+if ($SkipVrr) { return }
+
 $fix = Join-Path $root 'vrr-fix'
 $engine = Join-Path $fix 'engine'
 $toolDir = Join-Path $fix 'tools\VrrTest'

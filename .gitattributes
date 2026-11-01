@@ -3,3 +3,7 @@
 *.vbs text eol=crlf
 *.txt text eol=crlf
 *.cpp text eol=crlf
+*.cs text eol=crlf
+*.csproj text eol=crlf
+*.manifest text eol=crlf
+*.ico binary
